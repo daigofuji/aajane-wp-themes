@@ -1,0 +1,83 @@
+/*   
+Theme Name: AAJA NE 2013 Modified
+Theme URI: http://aajane.org/
+Description: aaja changed the logo, updating the theme to match the look
+Author: A guy who swears we'll redesign this site some day.
+Author URI: http://daigo.org/
+Template: thematic
+Version: 1.0
+Tags: white, three-columns, two-columns, fixed-width, theme-options, left-sidebar, right-sidebar, threaded-comments, sticky-post, microformats
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+.
+The Thematic Theme is copyright Ian Stewart http://themeshaper.com/
+This work, like WordPress, is released under GNU General Public License, version 2 (GPL).
+.
+
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+/* Overriding Thematic's styles for congruity with WP-Admin > Appearance > Header default header text color settings */
+#blog-description { color: #000 }
+
+
+#blog-title a {
+display: block;
+text-indent: -9000px;
+height: 86px;
+width: 899px;
+background: url(AAJANE.gif) no-repeat top center;
+}
+#primary {
+	border: 1px solid #901b12;
+}
+
+#branding {
+margin:10px auto; padding:0;
+}
+#blog-description {
+	display:none;
+	margin:0; padding:0;
+}
+
+/*
+Images are wrapped in divs classed "flickr_badge_image" with ids "flickr_badge_imageX" where "X" is an integer specifying ordinal position. Below are some styles to get you started!
+*/
+#flickr_badge_uber_wrapper {text-align:center; width:280px;}
+#flickr_badge_wrapper {padding:10px 0 10px 0;}
+.flickr_badge_image {margin:0 0 10px 0;width:135px; height:100px;}
+.flickr_badge_image img {border: none;}
+#flickr_badge_source {text-align:left; margin:0 10px 0 10px;}
+#flickr_badge_icon {float:left; margin-right:5px;}
+#flickr_www {display:block; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+#flickr_badge_uber_wrapper a:hover,
+#flickr_badge_uber_wrapper a:link,
+#flickr_badge_uber_wrapper a:active,
+#flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+#flickr_badge_wrapper {}
+#flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+#flickr_badge_image1, #flickr_badge_image3, #flickr_badge_image5, #flickr_badge_image7, #flickr_badge_image9 {
+	float:left;
+}
+#flickr_badge_image2, #flickr_badge_image4, #flickr_badge_image6, #flickr_badge_image8, #flickr_badge_image10 {
+	float:right;
+}
